@@ -165,7 +165,7 @@ class GoogleDriveHelper:
         # File body description
         file_metadata = {
             'name': file_name,
-            'description': '👨‍🦰 ᴜᴘʟᴏᴀᴅᴇᴅ ᴜꜱɪɴɢ ᴘʀɪɪɪɪʏᴏ ᴍɪʀʀᴏʀ ʟᴇᴇᴄʜ ʙᴏᴛ',
+            'description': 'Uploaded By C2PTECH',
             'mimeType': mime_type,
         }
         try:
@@ -480,7 +480,7 @@ class GoogleDriveHelper:
     def create_directory(self, directory_name, parent_id):
         file_metadata = {
             "name": directory_name,
-            "description": "👨‍🦱 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ ᴘʀɪɪɪɪʏᴏ ᴍɪʀʀᴏʀ ʟᴇᴇᴄʜ ʙᴏᴛ",
+            "description": "Uploaded by C2PTECH",
             "mimeType": self.__G_DRIVE_DIR_MIME_TYPE
         }
         if parent_id is not None:
@@ -577,9 +577,9 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = '💞 ᴘʀɪɪɪɪʏᴏ ᴍɪʀʀᴏʀʙᴏᴛ ꜱᴇᴀʀᴄʜ',
-                                 author_name='💓 ᴘʀɪɪɪɪʏᴏ ᴍɪʀʀᴏʀʙᴏᴛ',
-                                 author_url='https://github.com/PriiiiyoDevs/priiiiyo-mirrorbot',
+                                 title = 'C2PTECH',
+                                 author_name='Aashath',
+                                 author_url='https://www.youtube.com/c/c2ptech,
                                  html_content=content)
         return
 
@@ -774,9 +774,9 @@ class GoogleDriveHelper:
 
         for content in self.telegraph_content :
             self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                    title = '💞 ᴘʀɪɪɪɪʏᴏ ᴍɪʀʀᴏʀ ʟᴇᴇᴄʜ ʙᴏᴛ ꜱᴇᴀʀᴄʜ',
-                                                    author_name='💓 ᴘʀɪɪɪɪʏᴏ ᴍɪʀʀᴏʀ ʟᴇᴇᴄʜ ʙᴏᴛ',
-                                                    author_url='https://github.com/PriiiiyoDevs/priiiiyo-mirror-leech-bot',
+                                                    title = 'C2P TECH',
+                                                    author_name='Aashath',
+                                                    author_url='https://www.youtube.com/c/c2ptech',
                                                     html_content=content
                                                     )['path'])
 
