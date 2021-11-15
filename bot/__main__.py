@@ -38,13 +38,13 @@ def stats(update, context):
     memory = psutil.virtual_memory().percent
     disk = psutil.disk_usage('/').percent
     stats = f'▶ Rᴜɴɴɪɴɢ Sɪɴᴄᴇ ▶ : {currentTime}\n' \
-            f'<b>DISK INFO</b>\n' \
-            f'<b><i>Total</i></b>: {total}\n' \
-            f'<b><i>Used</i></b>: {used} ~ ' \
-            f'<b><i>Free</i></b>: {free}\n\n' \
-            f'<b>DATA USAGE</b>\n' \
-            f'<b><i>UL</i></b>: {sent} ~ ' \
-            f'<b><i>DL</i></b>: {recv}\n\n' \
+            f'<b> DISK INFO</b>\n' \
+            f'<b><i> 💾 Total</i></b>: {total}\n' \
+            f'<b><i> 📀 Used</i></b>: {used} ~ ' \
+            f'<b><i> 💿 Free</i></b>: {free}\n\n' \
+            f'<b> 💯 DATA USAGE</b>\n' \
+            f'<b><i> 🔼 UL</i></b>: {sent} ~ ' \
+            f'<b><i> 🔽 DL</i></b>: {recv}\n\n' \
             f'<b>SERVER STATS</b>\n' \
             f'<b><i>CPU</i></b>: {cpuUsage}%\n' \
             f'<b><i>RAM</i></b>: {memory}%\n' \
@@ -63,8 +63,8 @@ def call_back_data(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/PriiiiyoDevs/priiiiyo-mirror-leech-bot")
-    buttons.buildbutton("Channel", "https://t.me/PriiiiyoMirrorUpdates")
+    buttons.buildbutton("Owner", "https://t.me/Aashath")
+    buttons.buildbutton("Channel", "https://www.youtube.com/c/c2ptech")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
