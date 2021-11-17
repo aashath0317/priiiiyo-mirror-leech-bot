@@ -8,6 +8,7 @@ import subprocess
 import time
 import math
 import json
+import PIL
 
 from PIL import Image
 
